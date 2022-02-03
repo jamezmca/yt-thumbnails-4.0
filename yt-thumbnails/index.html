@@ -1,17 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link href="style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body class="bg-amber-200 font-effect-anaglyph text-4xl font-bold">
-    <div id="app"></div>
-    <div>
-      James
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+
+  <style>
+    #banana {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #veru {
+      text-shadow: 0 0 4px white;
+    }
+
+    #icons {
+      font-size: 2em;
+      z-index: 0;
+    }
+
+    #icons i {
+      color: hsl(230, 100%,30%);
+      opacity: 0.6;
+      transform: rotate(30deg);
+    }
+
+    
+  </style>
+</head>
+
+<body class="flex flex-wrap gap-3 py-3">
+  <div id="app"></div>
+
+
+
+  <!-- ////////////////////// GOOGLE CLOUD FUNCTIONS -->
+  <div id="banana" class=" w-80 h-48 text-white relative">
+    <div id="icons" class="absolute bg-slate-900 rotate -inset-0 flex gap-2 flex-wrap overflow-hidden justify-center">
+      <i class="fa-solid fa-anchor"></i>
+      <i class="fa-brands fa-android"></i>
+      <i class="fa-solid fa-asterisk"></i>
+      <i class="fa-solid fa-bahai"></i>
+      <i class="fa-brands fa-battle-net"></i>
+      <i class="fa-solid fa-biohazard"></i>
+      <i class="fa-solid fa-bomb"></i>
+      <i class="fa-solid fa-book-skull"></i>
+      <i class="fa-solid fa-broom-ball"></i>
+      <i class="fa-solid fa-bullseye"></i>
+      <i class="fa-solid fa-broom"></i>
+      <i class="fa-regular fa-chess-bishop"></i>
+      <i class="fa-solid fa-chess-knight"></i>
+      <i class="fa-solid fa-chess-rook"></i>
+      <i class="fa-solid fa-crown"></i>
+      <i class="fa-brands fa-d-and-d"></i>
+      <i class="fa-solid fa-crow"></i>
+      <i class="fa-solid fa-dharmachakra"></i>
+      <i class="fa-brands fa-discord"></i>
+      <i class="fa-solid fa-dice-d20"></i>
+      <i class="fa-solid fa-dragon"></i>
+      <i class="fa-brands fa-fort-awesome"></i>
+      <i class="fa-brands fa-galactic-senate"></i>
+      <i class="fa-solid fa-gavel"></i>
+      <i class="fa-brands fa-freebsd"></i>
+      <i class="fa-solid fa-gamepad"></i>
+      <i class="fa-regular fa-gem"></i>
+      <i class="fa-solid fa-ghost"></i>
+      <i class="fa-brands fa-grunt"></i>
+      <i class="fa-brands fa-hotjar"></i>
+      <i class="fa-solid fa-jet-fighter"></i>
+      <i class="fa-solid fa-meteor"></i>
+      <i class="fa-brands fa-steam-symbol"></i>
+      <i class="fa-brands fa-twitch"></i>
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+      <i class="fa-solid fa-wind"></i>
+      <i class="fa-solid fa-yin-yang"></i>
+      <i class="fa-solid fa-atom"></i>
+      <i class="fa-solid fa-book-skull"></i>
+      <i class="fa-solid fa-hat-wizard"></i>
+      <i class="fa-solid fa-scroll"></i>
+      <i class="fa-solid fa-skull-crossbones"></i>
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-solid fa-dungeon"></i>
+      <i class="fa-solid fa-shield"></i>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <p id="veru" class="text-5xl font-bold text-center pt-5 relative z-10">STOCK API</p>
+
+    <div class="flex px-2 justify-center relative z-10">
+      <img class="w-28 p-3 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png" alt="nice" />
+      <img class="w-28 p-3 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png" alt="nice" />
+
+    </div>
+    <div class="h-5 mt-1 bg-green-200 relative z-10">
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
