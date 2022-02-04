@@ -6,8 +6,8 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link href="style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
 
@@ -26,20 +26,70 @@
     }
 
     #icons i {
-      color: hsl(180, 100%,15%);
+      color: hsl(180, 100%, 15%);
       opacity: 0.6;
       transform: rotate(30deg);
     }
 
-    
+    .image {
+      font-family: 'Poppins', sans-serif;
+      width: 1280px;
+      height: 720px;
+      background: linear-gradient(to bottom right, #001233, #6fffe9);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+
+    .image p {
+      padding: 0;
+      margin: 0;
+      color: white;
+    }
+
+    .moon {
+      font-size: 160px;
+      letter-spacing: 10px;
+      font-weight: 800;
+      text-shadow: 0 0 5px white;
+      position: relative;
+      z-index: 10;
+    }
+
+    .apparel {
+      font-size: 50px;
+      letter-spacing: 8px;
+      font-weight: 500;
+      text-shadow: 0 0 4px white;
+      align-self: center;
+      position: relative;
+
+    }
+
+    .image div img {
+      margin: 0 80px 0 80px;
+    }
+
+    .image img {
+      width: 250px;
+      margin: auto auto;
+      max-height: 400px;
+    }
+
+    .image img:last-child {
+      margin-top: -60px;
+      padding-top: -60px;
+      width: 400px;
+    }
+
+
   </style>
 </head>
 
 <body class="flex flex-wrap gap-3 py-3">
   <div id="app"></div>
-
-
-
   <!-- ////////////////////// GOOGLE CLOUD FUNCTIONS -->
   <div id="banana" class=" w-80 h-48 text-white relative">
     <div id="icons" class="absolute bg-slate-900 rotate -inset-0 flex gap-2 flex-wrap overflow-hidden justify-center">
@@ -96,10 +146,10 @@
       <img class="w-28 p-3 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png" alt="nice" />
 
     </div>
-    <div class="h-5 mt-1 bg-green-200 relative z-10">
-
-    </div>
+    <div class="h-5 mt-1 bg-green-200 relative z-10"></div>
   </div>
+
+  <!-- ////////////////////// BEGINNER HTML PORTFOLIO -->
 
 
 
