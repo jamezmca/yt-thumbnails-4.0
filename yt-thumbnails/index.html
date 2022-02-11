@@ -12,12 +12,19 @@
   <title>Vite App</title>
 
   <style>
+    body > div {
+      width: 1280px;
+      height: 720px;
+      margin: 20px auto;
+    }
+
     #banana {
       font-family: 'Poppins', sans-serif;
     }
 
     #veru {
       text-shadow: 0 0 4px white;
+      font-size: 12rem;
     }
 
     #icons {
@@ -29,6 +36,8 @@
       color: hsl(180, 100%, 15%);
       opacity: 0.6;
       transform: rotate(30deg);
+      font-size: 8rem;
+      padding: 20px;
     }
 
     .image {
@@ -89,9 +98,9 @@
 </head>
 
 <body class="flex flex-wrap gap-3 py-3">
-  <div id="app"></div>
+  <!-- <div id="app"></div> -->
   <!-- ////////////////////// GOOGLE CLOUD FUNCTIONS -->
-  <div id="banana" class=" w-80 h-48 text-white relative">
+  <div id="banana" class="text-white relative">
     <div id="icons" class="absolute bg-slate-900 rotate -inset-0 flex gap-2 flex-wrap overflow-hidden justify-center">
       <i class="fa-solid fa-anchor"></i>
       <i class="fa-brands fa-android"></i>
@@ -139,19 +148,21 @@
       <i class="fa-solid fa-dungeon"></i>
       <i class="fa-solid fa-shield"></i>
     </div>
-    <p id="veru" class="text-5xl font-bold text-center pt-5 relative z-10">STOCK API</p>
+    <p id="veru" class="font-bold text-center pt-8 relative z-10">STOCK API</p>
 
-    <div class="flex px-2 justify-center relative z-10">
-      <img class="w-28 p-3 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png" alt="nice" />
-      <img class="w-28 p-3 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png" alt="nice" />
+    <div class="flex px-2 relative justify-around z-10 px-32">
+      <img class="flex-1 w-fit mx-20 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png" alt="nice" />
+      <img class="flex-1 w-fit mx-20 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png" alt="nice" />
 
     </div>
-    <div class="h-5 mt-1 bg-green-200 relative z-10"></div>
+    <div class="h-12 mt-9 bg-green-200 relative z-10"></div>
   </div>
 
   <!-- ////////////////////// BEGINNER HTML PORTFOLIO -->
 
+  <div >
 
+  </div>
 
 
 
