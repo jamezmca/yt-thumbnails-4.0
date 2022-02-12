@@ -12,7 +12,7 @@
   <title>Vite App</title>
 
   <style>
-    body > div {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');    body>div {
       width: 1280px;
       height: 720px;
       margin: 20px auto;
@@ -38,7 +38,7 @@
     }
 
     #icons i {
-    
+
       transform: rotate(30deg);
       font-size: 8rem;
       padding: 20px;
@@ -99,16 +99,31 @@
 
     /* DIV NUMBER TWO DIV NUMBER TWO DIV NUMBER TWO DIV NUMBER TWO DIV NUMBER TWO  */
     #blizz-style {
-      background: linear-gradient(to top right, hsl(250, 50%, 14%), hsl(200, 70%, 10%));
-      font-family: 'Monserrat', sans-serif;
-     
+      /* background: radial-gradient(circle at left bottom, hsl(200, 65%, 45%) 0%, darkslateblue 100%); */
+      font-family: 'Montserrat', sans-serif;
+      background: url('https://cdn.shopify.com/s/files/1/0616/7602/8135/files/gradient-bkgd-resize.jpg');
+      background-size: 100% 100%;
+      text-align: justify;
+      position: relative;
     }
 
     #blizz-style h1 {
-      color: inherit;
       font-weight: 800;
-      font-size: 24rem;
-      text-shadow: 0 0 5px 0px skyblue;
+      font-size: 18rem;
+    }
+
+    #blizz-style h1:first-child {
+      text-shadow: 0 0 7px hsl(200, 70%, 70%),
+      0 0 7px hsl(200, 70%, 70%),
+      0 0 7px hsl(200, 70%, 70%),
+      0 0 7px hsl(200, 70%, 70%),
+      0 0 7px hsl(200, 70%, 70%),
+      0 0 7px hsl(200, 70%, 70%);
+    }
+    #blizz-style h1:last-child {
+      position: absolute;
+      inset: 0;
+ 
     }
 
   </style>
@@ -168,8 +183,10 @@
     <p id="veru" class="font-bold text-center pt-8 relative z-10">STOCK API</p>
 
     <div class="flex px-2 relative justify-around z-10 px-32">
-      <img class="flex-1 w-fit mx-20 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png" alt="nice" />
-      <img class="flex-1 w-fit mx-20 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png" alt="nice" />
+      <img class="flex-1 w-fit mx-20 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png"
+        alt="nice" />
+      <img class="flex-1 w-fit mx-20 my-auto" src="assets/google-cloud-functions-logo-AECD57BFA2-seeklogo.com.png"
+        alt="nice" />
 
     </div>
     <div class="h-12 mt-9 bg-green-200 relative z-10"></div>
@@ -177,7 +194,8 @@
 
   <!-- ////////////////////// BEGINNER HTML PORTFOLIO -->
 
-  <div id="blizz-style" >
+  <div id="blizz-style">
+    <h1>JAMES</h1>
     <h1>JAMES</h1>
   </div>
 
