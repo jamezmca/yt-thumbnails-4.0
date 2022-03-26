@@ -266,18 +266,26 @@
       max-width: 80%;
     }
 
-    #noob {
+    #noob,
+    #node-begin {
       font-family: 'Lilita One', cursive;
       overflow: hidden;
     }
 
-    #noob h3 {
-      font-size: 10rem;
+    #noob h3,
+    #node-begin h3 {
+      font-size: 8rem;
       padding-bottom: 260px;
     }
 
-    #noob p {
+    #noob p,
+    #node-begin p {
       font-size: 3rem;
+    }
+
+    #node-begin i {
+      font-size: 20rem;
+      padding-bottom: 260px;
     }
 
     .banner {
@@ -336,10 +344,38 @@
       color: white;
       color: hsl(140, 100%, 37%);
     }
+
+    #node-begins {
+      font-family: 'Lilita One', cursive;
+    }
+
+    #node-begins h3 {
+      font-size: 5.5rem;
+    }
+    #node-begins i {
+      font-size: 18rem;
+      line-height: 14rem;
+      color: hsl(140, 100%, 37%);
+
+    }
+    #node-begins p {
+      font-size: 4rem;
+    }
   </style>
 </head>
 
 <body class="flex flex-wrap gap-3 py-3">
+  <div id="node-begins"
+    class="flex flex-col relative  bg-slate-900 items-center z-50">
+    <div class="text-slate-900 bg-white px-4 rounded-lg px-10 mt-20"><h3>BUILD A BACKEND IN 30 MINS</h3></div>
+    <p class="text-white pt-4">LEARN THE REST API ESSENTIALS</p>
+
+    <div class="flex flex-col gap-10 items-center px-10 rounded-lg mt-20">
+      <i class="fa-brands fa-node-js relative z-30"></i>
+      <!-- <h3 class="text-white">ESSENTIALS</h3> -->
+
+    </div>
+  </div>
 
   <div id="node" class="flex text-white bg-slate-900 justify-center items-center gap-10 flex-col">
 
