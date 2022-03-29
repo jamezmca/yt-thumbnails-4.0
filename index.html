@@ -373,20 +373,77 @@
       -webkit-text-fill-color: hsl(220, 90%, 8%);
       -webkit-text-stroke: 4px yellow;
     }
+
     #arr-reduce h3 {
       font-size: 5rem;
       letter-spacing: 4px;
     }
+
     #arr-reduce h1 {
       font-size: 17.8rem;
       line-height: 16rem;
       /* -webkit-text-fill-color: hsl(220, 90%, 8%);
       -webkit-text-stroke: 6px yellow; */
     }
+
+    #svelte {
+      font-family: 'Lilita One', cursive;
+
+    }
+
+    #svelte h1 {
+      font-size: 4rem;
+    }
+
+    #svelte h2 {
+      font-size: 4rem;
+    }
+
+    #svelte h3 {
+      font-size: 15rem;
+      line-height: 10rem;
+    }
+
+    #svelte h4 {
+      font-size: 8rem;
+      line-height: 10rem;
+    }
+    #svelte h5 {
+      font-size: 4.2rem;
+      line-height: 2rem;
+    }
   </style>
 </head>
 
 <body class="flex flex-wrap gap-3 py-3">
+  <div id="svelte" class="flex flex-col">
+    <div class="bg-slate-900 text-white relative shadow-lg px-8 py-4 opacity-90">
+      <h1 class="opacity-70">STOCK TICKER</h1>
+      <div class="absolute top-0 right-0 h-full bg-amber-500 grid place-items-center px-6">
+        <h2>ADD</h2>
+      </div>
+    </div>
+    <div class="flex items-center justify-center flex-1 gap-20 bg-slate-900 text-white">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png"
+          alt="svlete" class="w-80" />
+      </div>
+      <div class="flex flex-col justify-center items-center gap-8">
+        <h3>LEARN</h3>
+        <h4 class="bg-amber-500 text-white mx-3 px-8 rounded-lg">SVELTEKIT</h4>
+        <h5>by building a stock app</h5>
+      </div>
+    </div>
+    <!-- <div class="flex items-center justify-center pt-10"><h3>LEARN</h3> <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png"
+        alt="svlete" class="w-48"/> <h3>SVELTEKIT</h3>
+      
+    </div>
+    <div class="grid place-items-center">
+      <h4 class="bg-slate-900 text-white rounded-lg px-10">by building a stock analysis app</h4>
+    </div> -->
+  </div>
+
   <div id="arr-reduce" class="bg-slate-900 flex flex-col">
     <h1 class="text-white mx-auto pt-5">LEARN</h1>
     <h3 class="bg-white text-slate-900 px-10 rounded-lg mx-auto">[...array].reduce()</h3>
