@@ -410,6 +410,7 @@
       font-size: 8rem;
       line-height: 10rem;
     }
+
     #svelte h5 {
       font-size: 4.2rem;
       line-height: 2rem;
@@ -432,26 +433,78 @@
     #post h2:nth-child(1) {
       font-size: 3.5rem;
     }
-  
+
     #post h2:nth-child(2) {
       font-size: 10rem;
       line-height: 8rem;
       text-shadow: 0 0 6px black;
     }
+
     #post h2:nth-child(3) {
       font-size: 8rem;
       line-height: 10rem;
     }
+
     #post h2:nth-child(4) {
       font-size: 11.3rem;
       line-height: 8rem;
       text-shadow: 0 0 6px black;
 
     }
+
+    #post2 h1 {
+      font-size: 5.4rem;
+      /* line-height: 7.5rem; */
+      /* -webkit-text-fill-color: hsl(220, 90%, 8%);
+      -webkit-text-stroke: 5px white; */
+    }
+
+    #post2 h2 {
+      font-size: 5rem;
+    }
+
+    #post2 h3 {
+      font-size: 7.07rem;
+      line-height: 7rem;
+    }
+
+    #post2 h4 {
+      font-family: helvetica;
+      font-size: 10rem;
+      font-weight: lighter;
+      color: #444;
+
+    }
+
+    #post2 i {
+      font-size: 25rem;
+      color: hsl(140, 100%, 37%);
+    }
+
+    #post2 p {
+      font-size: 8rem;
+    }
   </style>
 </head>
 
-<body class="flex flex-wrap gap-3 py-3">
+<body class="flex flex-wrap py-3">
+  <div class="bg-slate-900 flex flex-col relative text-white justify-end px-20 " id="post2">
+    <div class="absolute top-0 left-0 w-full flex justify-center items-center gap-10">
+      <i class="fa-brands fa-node  rounded"></i>
+      <p>+</p>
+      <div class="bg-white rounded-full h-60 w-60 grid place-items-center">
+
+        <h4 class="">Ex</h4>
+      </div>
+    </div>
+    <div class="flex items-center gap-6">
+      <h1 class="rounded w-fit bg-white text-slate-900 px-5">HOW TO</h1>
+      <h2 class="">SEND DATA BETWEEN</h2>
+    </div>
+    <h3 class="pb-12 pt-6">FRONTEND & BACKEND</h3>
+
+  </div>
+
   <div id="post" class="bg-slate-900 flex items-center justify-center gap-20">
     <div class="flex flex-col justify-center items-center gap-10 bg-white px-10 rounded-lg w-fit py-8">
       <i class="fa-solid fa-desktop"></i>
