@@ -519,13 +519,124 @@
       padding-top: 40px;
     }
 
-    #login-form i {font-size: 8rem; color:white;}
-    #login-form h3 {font-family: 'Poppins'; font-weight: 400; margin-left: -50px; font-size: 4.2rem;}
+    #login-form i {
+      font-size: 8rem;
+      color: white;
+    }
+
+    #login-form h3 {
+      font-family: 'Poppins';
+      font-weight: 400;
+      margin-left: -50px;
+      font-size: 4.2rem;
+    }
+
     /* #login-form svg {width: 400px;} */
+
+
+    #cheerio i:first-child {
+      font-size: 14rem;
+      /* color: turquoise; */
+      z-index: 10;
+      border-radius: 50%;
+      transform: rotate(-30deg);
+      -webkit-text-fill-color: lightskyblue;
+      -webkit-text-stroke: 5px white;
+    }
+
+    #cheerio span {
+      position: absolute;
+      width: 9px;
+      border-radius: 10px;
+      height: 70%;
+      background: white;
+      
+    }
+
+    #cheerio span:nth-child(2) {
+      transform: rotate(60deg);
+    }
+
+    #cheerio span:nth-child(3) {
+      transform: rotate(-60deg);
+    }
+
+    #cheerio h1 {
+      font-size: 16.7rem;
+      line-height: 14.4rem;
+      margin-left: -10px;
+    }
+    #cheerio h2 {
+      font-size: 6.5rem;
+      line-height: 7.8rem;
+    }
+    #cheerio h3 {
+      font-size: 3.45rem;
+      margin-left: -1px;
+      line-height: 5rem;
+    }
+
+    #cheerio > i {
+      position: absolute;
+    }
+    #cheerio > i:first-child {
+      -webkit-text-fill-color: black;
+      -webkit-text-stroke: 1.5px white;
+      text-shadow: 0 0 4px crimson;
+      font-size: 3rem;
+      top: 20px;
+      right: 40px;
+      transform: rotate(-150deg);
+    }
+    #cheerio > i:nth-child(2) {
+      -webkit-text-fill-color: black;
+      -webkit-text-stroke: 1.5px greenyellow;
+      text-shadow: 0 0 2px turquoise;
+      font-size: 3rem;
+      top: 90%;
+      right: 250px;
+      transform: rotate(-30deg);
+    }
+    #cheerio > i:nth-child(3) {
+      -webkit-text-fill-color: crimson;
+      -webkit-text-stroke: 1.5px white;
+      text-shadow: 0 0 2px crimson;
+      font-size: 2rem;
+      top: 42%;
+      right: 450px;
+      transform: rotate(-30deg);
+      z-index: 20;
+    }
   </style>
 </head>
 
 <body class="flex flex-wrap py-3">
+  <div id="cheerio" class="bg-slate-900 flex text-white relative ">
+    <i class="fa-solid fa-spider"></i>
+    <i class="fa-solid fa-spider "></i>
+    <i class="fa-solid fa-spider"></i>
+
+    <!-- <div class="bg-slate-800 text-5xl text-center tracking-wider">
+      <h2>CONST $ = CHEERIO.LOAD(HTML)</h2>
+    </div> -->
+    <div class="grid place-items-center relative px-44">
+      <i class="fa-solid fa-spider"></i>
+      <!-- <i class="fa-solid fa-bullseye"></i> -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <h3 class="z-10 absolute ml-2">Pt 1</h3>
+    </div>
+    <div class="flex items-center justify-center flex-col flex-1 -ml-20 relative z-10 scale-110">
+      <h1 class="text-8xl">WEB</h1>
+      <h2 class="bg-white text-slate-900 rounded bg-sky-300 px-5 text-white">SCRAPING</h2>
+      <h3>with cheerio & node.js</h3>
+    </div>
+    <div>
+
+    </div>
+  </div>
+
   <div id="login-form" class="flex border flex-col border-solid border-gray-100">
 
     <div class="text-slate-900 flex justify-center items-center gap-20 bg-gradient-to-r from-cyan-300 to-teal-200 py-6">
@@ -558,8 +669,8 @@
         REGISTER
       </div>
     </div>
-    
-    
+
+
   </div>
 
   <div id="fetch-data"
