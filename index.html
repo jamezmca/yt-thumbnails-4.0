@@ -563,7 +563,7 @@
 
     #cheerio h1 {
       font-size: 6rem;
-      line-height:8rem;
+      line-height: 8rem;
     }
 
     #cheerio h2 {
@@ -646,10 +646,92 @@
     #login-form-2 h4 {
       font-family: 'Poppins';
     }
+
+   
+
+    #covid-app h1 {
+      font-size: 12rem;
+      line-height: 11.6rem;
+    }
+
+    #covid-app h2 {
+      font-size: 11rem;
+      line-height: 12.5rem;
+    }
+
+    #covid-app h3 {
+      font-size: 3.4rem;
+      line-height: 6rem;
+    }
+
+    #covid-app i {
+      color: hsl(190, 100%, 60%);
+      font-size: 9rem;
+      /* font-weight: 500; */
+    }
+
+    .bar1 {
+      background: linear-gradient( 0.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+      /* background: linear-gradient( 0.6deg, #2E3192,#1BFFFF ); */
+      height: 460px;
+      width: 140px;
+    }
+    .bar2 {
+      /* background: linear-gradient(to bottom, #11998E, #38EF7D); */
+      /* background: linear-gradient(to top, #BFF098, #6FD6FF); */
+      background: radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgba(255,251,125,1) 90.7% );;
+      height: 340px;
+      width: 140px;
+    }
+    .bar3 {
+      /* background: linear-gradient(0deg, #d4fc79 0%, #96e6a1 100%); */
+      background: linear-gradient(to top, #ff9966, #ff5e62);;
+      /* background: linear-gradient(-75deg,#d64c7f,#ee4758 50%); */
+      height: 170px;
+      width: 140px;
+    }
+
+    #graphbar {
+      transform: rotate3d(0.7, 0, 0.3, 25deg);
+    }
+
+    #covid-app div div i {
+      color: white;
+      font-size: 5rem;
+    }
+    #covid-app div div i:nth-child(2) {
+      color: rgba(133,255,189,1);
+      font-size: 2.5rem;
+    }
   </style>
 </head>
 
 <body class="flex flex-wrap py-3">
+
+  <div id="covid-app" class="bg-slate-900 flex text-white relative">
+    <div class="flex justify-center items-center flex-col flex-1 ml-14 mr-10">
+      <h1 class="">LEARN</h1>
+      <h2 class="bg-sky-400 px-6 rounded">REACT</h2>
+      <h3>by building a covid app</h3>
+    </div>
+    <div class="flex-1 flex justify-center items-center">
+      <div id="graphbar" class="flex justify-around items-end p-4 gap-6 rotate-12 border-b-4 shadow border-solid border-cyan-200">
+        <div class="bar1 rounded relative">
+          <i class="fa-solid fa-viruses absolute top-14 left-5"></i>
+        </div>
+        <div class="bar2 rounded relative">
+          <i class="fa-solid fa-heart absolute top-10 left-7"></i>
+          <i class="fa-solid fa-plus absolute top-16 -mt-1 left-14 -ml-1.5"></i>
+        </div>
+        <div class="bar3 rounded relative">
+          <i class="fa-solid fa-house-chimney-medical absolute top-6 left-6"></i>
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-8 right-8">
+      <i id="covid-react" class="fa-brands fa-react"></i>
+    </div>
+  </div>
 
   <div id="login-form-2" class="bg-slate-900 flex flex-col justify-center items-center gap-20">
     <h2 class="bg-white px-10 rounded-lg text-slate-900 ">BUILD A LOGIN FORM WITH</h2>
