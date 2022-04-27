@@ -710,40 +710,99 @@
     }
 
     #banner i:first-child {
-      font-size: 24rem;
-      transform: rotate(-15deg);
-      color:#6fffe9;
+      font-size: 14rem;
+      color: white;
+      padding-bottom: 20px;
+      padding-right: 30px;
+      /* -webkit-text-fill-color: #0f172a;
+      -webkit-text-stroke: 4px white; */
       /* text-shadow: 0 0 5px cyan; */
     }
 
-    /* #banner i:nth-child(2) {
-      font-size: 8rem;
-      transform: rotate(-30deg);
-
-    } */
-
     #banner h1 {
       font-family: '';
-      font-size: 5rem;
+      font-size: 8rem;
+      line-height: 8rem;
       color: white;
-      font-family: 'Lilita One', cursive;
-      font-weight: 600;
+      font-family: 'Poppins', cursive;
+      font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 5px white;
+    }
 
+    #banner p {
+      color: hsl(220, 90%, 8%);
+      font-family: 'lilita One';
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      text-align: center;
+      border-radius: 4px;
+      -webkit-text-stroke: 1px white;
+      padding: 4px 0;
+
+    }
+
+    #ssr {
+      background: linear-gradient(to right, hsl(230, 90%, 13%), rgb(15 23 42));
+
+    }
+
+    #ssr h1 {
+      font-size: 12rem;
+      line-height: 10rem;
+      /* font-family: 'Poppins';
+      font-weight: 600; */
+      /* background: -webkit-linear-gradient(#, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; */
+    }
+
+    #ssr h1:first-child {
+      background: -webkit-linear-gradient(#67e8f9, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    #ssr h1:last-child {
+      background: -webkit-linear-gradient(#fb7185, #fbbf24);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    #ssr h3 {
+      font-size: 6rem;
+      line-height: 6rem;
+      font-family: 'Poppins';
+    }
+
+    #ssr i {
+      /* color: plum; */
+      /* color: palevioletred; */
+      font-size: 14rem;
     }
   </style>
 </head>
 
 <body class="flex flex-wrap py-3">
+  <div id="ssr" class="flex relative gap-14 flex items-center justify-center">
+    <div class="flex items-center flex-col justify-center  py-14 text-white leading-none px-14 rounded-xl ">
+      <h1 class="">SSR</h1>
+      <h3 class="text-white py-8">vs</h3>
+      <h1 class="">CSR</h1>
+    </div>
+    <img src="https://i.imgur.com/NQwJ4dz.png" alt="meme" />
+
+  </div>
 
   <section style="width:2560px;height:1440px;" id="banner" class="bg-slate-900 grid place-items-center">
-    <section style="width:2560px;height:423px;" class="border-t border-b border-solid border-cyan-200 flex items-center justify-center">
+    <section style="width:2560px;height:423px;"
+      class="border-t border-b border-solid border-cyan-200 flex items-center justify-center">
       <!-- <i class="fa-solid fa-dragon text-sky-700"></i> -->
-      <i class="fa-brands fa-phoenix-framework"></i>
-      <div>
-        <h1>new coding tutorials every 5 days</h1>
-        <p></p>
+      <i class="fa-solid fa-user-astronaut"></i>
+      <div class="pb-1">
+        <h1>SMOLJAMES</h1>
+        <p class="bg-gradient-to-r from-cyan-300 to-teal-200">new coding tutorials every 5 days</p>
       </div>
     </section>
   </section>
@@ -827,7 +886,7 @@
 
   <div id="login-form" class="flex border flex-col border-solid border-gray-100">
 
-    <div class="text-slate-900 flex justify-center items-center gap-20 bg-gradient-to-r from-cyan-300 to-teal-200 py-6">
+    <div class="text-slate-900 flex justify-center items-center bg-gradient-to-r from-cyan-300 to-teal-200 py-6">
       <!-- <h2>FORMS</h2>
       <h3>LOGIN & REGISTRATION</h3> -->
       <i class="fa-brands fa-html5"></i>
