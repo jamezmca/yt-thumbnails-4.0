@@ -198,14 +198,14 @@
     }
 
     section {
-      font-family: 'Lilita One', cursive;
+      /* font-family: 'Lilita One', cursive;
       letter-spacing: 8px;
       line-height: 11rem;
       margin: 0 auto;
       font-size: 6.5rem;
       text-align: center;
       background: hsl(220, 90%, 8%);
-      padding: 40px;
+      padding: 40px; */
       /* text-shadow: 0 0 8px white; */
     }
 
@@ -223,13 +223,13 @@
       -webkit-text-stroke: 20px hsl(220, 90%, 8%); */
     }
 
-    section i {
+    /* section i {
       font-size: 35rem;
       margin: 0 auto;
       padding: 200px 0 0 0;
       -webkit-text-fill-color: hsl(220, 90%, 8%);
       -webkit-text-stroke: 6px yellow;
-    }
+    } */
 
     #host {
       font-family: 'Lilita One', cursive;
@@ -647,7 +647,7 @@
       font-family: 'Poppins';
     }
 
-   
+
 
     #covid-app h1 {
       font-size: 12rem;
@@ -671,21 +671,25 @@
     }
 
     .bar1 {
-      background: linear-gradient( 0.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+      background: linear-gradient(0.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
       /* background: linear-gradient( 0.6deg, #2E3192,#1BFFFF ); */
       height: 460px;
       width: 140px;
     }
+
     .bar2 {
       /* background: linear-gradient(to bottom, #11998E, #38EF7D); */
       /* background: linear-gradient(to top, #BFF098, #6FD6FF); */
-      background: radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgba(255,251,125,1) 90.7% );;
+      background: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
+      ;
       height: 340px;
       width: 140px;
     }
+
     .bar3 {
       /* background: linear-gradient(0deg, #d4fc79 0%, #96e6a1 100%); */
-      background: linear-gradient(to top, #ff9966, #ff5e62);;
+      background: linear-gradient(to top, #ff9966, #ff5e62);
+      ;
       /* background: linear-gradient(-75deg,#d64c7f,#ee4758 50%); */
       height: 170px;
       width: 140px;
@@ -699,14 +703,50 @@
       color: white;
       font-size: 5rem;
     }
+
     #covid-app div div i:nth-child(2) {
-      color: rgba(133,255,189,1);
+      color: rgba(133, 255, 189, 1);
       font-size: 2.5rem;
+    }
+
+    #banner i:first-child {
+      font-size: 24rem;
+      transform: rotate(-15deg);
+      color:#6fffe9;
+      /* text-shadow: 0 0 5px cyan; */
+    }
+
+    /* #banner i:nth-child(2) {
+      font-size: 8rem;
+      transform: rotate(-30deg);
+
+    } */
+
+    #banner h1 {
+      font-family: '';
+      font-size: 5rem;
+      color: white;
+      font-family: 'Lilita One', cursive;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+
     }
   </style>
 </head>
 
 <body class="flex flex-wrap py-3">
+
+  <section style="width:2560px;height:1440px;" id="banner" class="bg-slate-900 grid place-items-center">
+    <section style="width:2560px;height:423px;" class="border-t border-b border-solid border-cyan-200 flex items-center justify-center">
+      <!-- <i class="fa-solid fa-dragon text-sky-700"></i> -->
+      <i class="fa-brands fa-phoenix-framework"></i>
+      <div>
+        <h1>new coding tutorials every 5 days</h1>
+        <p></p>
+      </div>
+    </section>
+  </section>
 
   <div id="covid-app" class="bg-slate-900 flex text-white relative">
     <div class="flex justify-center items-center flex-col flex-1 ml-14 mr-10">
@@ -715,7 +755,8 @@
       <h3>by building a covid app</h3>
     </div>
     <div class="flex-1 flex justify-center items-center">
-      <div id="graphbar" class="flex justify-around items-end p-4 gap-6 rotate-12 border-b-4 shadow border-solid border-cyan-200">
+      <div id="graphbar"
+        class="flex justify-around items-end p-4 gap-6 rotate-12 border-b-4 shadow border-solid border-cyan-200">
         <div class="bar1 rounded relative">
           <i class="fa-solid fa-viruses absolute top-14 left-5"></i>
         </div>
