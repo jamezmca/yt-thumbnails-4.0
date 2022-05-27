@@ -906,38 +906,84 @@
       font-family: 'Koulen', sans-serif;
     }
 
-    #node-crash i {
-      font-size: 20rem;
+    #node-crash > div:first-child i {
+      font-size: 30rem;
       text-shadow: 0 0 18px #00ff87;
     }
 
     #node-crash h2 {
-      font-size: 5rem;
-      line-height: 7rem;
+      font-size: 6.7rem;
+      line-height: 9rem;
       /* font-weight: 600; */
 
     }
 
     #node-crash h3 {
-      font-size: 11rem;
+      font-size: 14rem;
       font-weight: 600;
       line-height: 8rem;
       letter-spacing: 2px;
       /* background: linear-gradient(to bottom right, #00ff87, #60efff); */
 
     }
+
+    #node-crash > div:last-child i {
+      font-size: 2.5rem;
+    }
+
+    #banner2 h1 {
+      font-family: 'koulen';
+      font-size: 14rem;
+      line-height: 10rem;
+    }
+    #banner2 p {
+      font-family: 'Montserrat';
+      font-size: 7.4rem;
+      line-height: 7rem;
+    }
   </style>
 </head>
 
 <body class="flex flex-wrap py-3">
-  <div id="node-crash" class="flex flex-col text-center gap-8 items-center justify-center text-white">
-    <div class="flex items-center justify-center gap-20">
-      <i class="fa-brands fa-node-js"></i>
-      <i class="fa-brands fa-node"></i>
+  <section style="width:2560px;height:1440px;" id="banner2" class="bg-slate-900 text-white grid place-items-center">
+    <section style="width:2560px;height:423px;"
+      class="border-t border-b border-solid border-cyan-200 flex flex-col items-center justify-center">
+      <!-- <i class="fa-solid fa-dragon text-sky-700"></i> -->
+      <h1 class="pt-5 pb-1">
+        SWOLDIER
+      </h1>
+      <p>FITNESS</p>
+     
+    </section>
+  </section>
+
+  <div id="node-crash" class="flex gap-10 items-center justify-center text-white">
+
+    <div class="flex flex-1 ml-20 gap-4 flex-col items-stretch justify-center">
+      <i class="fa-brands fa-node -my-10"></i>
+      <h2 class="mb-10 rounded-lg text-center text-slate-900 bg-white">Crash Course</h2>
     </div>
-    <div class="">
-      <h3 class="py-4 rounded-lg">Node Essentials</h3>
-      <h2 class="bg-white mx-auto w-fit px-10 text-slate-900">Crash Course</h2>
+    <div class="flex flex-col text-6xl p-8 h-fit justify-center gap-8">
+      <div class="flex gap-8 items-center">
+        <i class="fa-brands fa-node-js"></i>
+        <p>CLI COMMANDS</p>
+      </div>
+      <div class="flex gap-8 items-center">
+        <i class="fa-brands fa-node-js"></i>
+        <p>Express.js + REST APIs</p>
+      </div>
+      <div class="flex gap-8 items-center">
+        <i class="fa-brands fa-node-js"></i>
+        <p>CLIENT SIMULATION & TESTING</p>
+      </div>
+      <div class="flex gap-8 items-center">
+        <i class="fa-brands fa-node-js"></i>
+        <p>CRON JOBS</p>
+      </div>
+      <div class="flex gap-8 items-center">
+        <i class="fa-brands fa-node-js"></i>
+        <p>MIDDLEWARE</p>
+      </div>
     </div>
   </div>
 
