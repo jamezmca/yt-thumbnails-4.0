@@ -944,31 +944,44 @@
     }
 
     #fb-node h2 {
-      font-size: 20rem;
+      font-size: 17rem;
       font-family: 'Poppins';
       letter-spacing: 20px;
-      text-shadow: 10px 10px 0 cyan,
-        20px 20px 0 #ffbf00;
+      text-shadow: 13px 13px 0 cyan,
+        26px 26px 0 #ffbf00;
       font-weight: 800;
-      line-height: 23rem;
+      line-height: 19rem;
     }
 
     #fb-node i {
-      font-size: 16rem;
+      font-size: 20rem;
       color: cyan;
+    }
+
+    #fb-node p:last-child {
+      font-size: 7rem;
+      font-family: 'Poppins';
+      font-weight: 700;
+
     }
   </style>
 </head>
 
 <body class="flex flex-wrap py-3">
-  <div id="fb-node" class="bg-slate-900 text-white relative flex flex-col">
-    <h2 class=" text-center mr-4">CRUD</h2>
-    <p class="bg-white text-slate-900 px-10 py-2 w-fit mx-auto text-6xl ">with</p>
-    <div class="flex items-center justify-center gap-32 -mt-5 -ml-20 relative">
+  <div id="images" class="flex items-stretch">
+    <img src="https://i.imgur.com/hb8ePlV.jpg" alt="cs50x" />
+    <img src="https://i.imgur.com/ePh7Kzf.jpg" alt="cs50x" />
+    <img src="https://i.imgur.com/dGqP1t3.jpg" alt="cs50x" />
+    <img src="https://i.imgur.com/eQOeSuP.jpg" alt="cs50x" />
+
+  </div>
+
+  <div id="fb-node" class="bg-slate-900 text-white relative flex justify-center gap-5 items-center">
+    <div class="flex flex-col items-center -mt-28 gap-24 justify-center relative">
       <i class="fa-brands fa-react z-20"></i>
-      <p class="text-8xl -ml-16">+</p>
-      <svg xmlns="http://www.w3.org/2000/svg" class="scale-150" xmlns:xlink="http://www.w3.org/1999/xlink" width="111px" height="151px"
-        viewBox="0 0 111 151" version="1.1">
+      <!-- <p class="text-8xl -ml-16">+</p> -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="scale-[2.3]" xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="111px" height="151px" viewBox="0 0 111 151" version="1.1">
         <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
         <title>logo_lockup_firebase_vertical</title>
         <desc>Created with Sketch.</desc>
@@ -1037,6 +1050,12 @@
           </g>
         </g>
       </svg>
+    </div>
+    <div class="flex flex-col items-center justify-center">
+      <h2 class=" text-center mr-4">CRUD</h2>
+      <p class="bg-white text-slate-900 px-10 py-1 text-slate-900 w-fit mx-auto text-[5.7rem] rounded">FIREBASE & REACT
+      </p>
+      <p class="">Crash Course</p>
     </div>
   </div>
 
