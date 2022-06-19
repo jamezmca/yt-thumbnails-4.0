@@ -999,15 +999,103 @@
 
     }
 
-    #mextjs p, h3 {
+    #mextjs p,
+    h3 {
       font-family: 'Poppins';
     }
 
-   
+    #swoldier {
+      height: 1920px;
+      width: 1000px;
+      margin: 0 auto;
+      font-family: 'Montserrat';
+    }
+
+
+    #swoldier h1 {
+      font-family: 'Koulen';
+      font-size: 13rem;
+      line-height: 11rem;
+    }
+
+    #swoldier h2 {
+      font-size: 7.5rem;
+      font-weight: 500;
+      line-height: 7rem;
+    }
+
+    #swoldier p {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    #swoldier-intro {
+      animation: zooom 5s ease-in-out infinite;
+    }
+
+    #swoldier-bio {
+      animation: appear 5s ease-out infinite;
+      opacity: 0;
+    }
+
+    #swoldier-web {
+      animation: appear 5s ease-out infinite;
+      opacity: 0;
+      font-family: 'koulen';
+    }
+
+    @keyframes zooom {
+      0% {
+        opacity: 0.5;
+        transform: scale(0.4);
+      }
+
+      20% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 
 <body class="flex flex-wrap py-3">
+
+  <section id="swoldier" class="bg-slate-900 flex flex-col gap-10 items-center justify-center text-white">
+    <div id="swoldier-intro" class="text-center">
+      <h1 class="">SWOLDIER</h1>
+      <h2>FITNESS</h2>
+    </div>
+    <div id="swoldier-bio" class="uppercase mx-32 py-8 px-10 w-fit text-slate-900 bg-white flex flex-col gap-3">
+      <!-- <p class="font-medium">train smarter today!</p> -->
+      <h3 id="swoldier-web" class="text-center pt-2 tracking-wider font-medium text-4xl">www.swoldierfitness.com</h3>
+      <!-- <p class=" text-xs py-1 pt-2">Link in bio</p> -->
+    </div>
+  </section>
+
+
   <div id="mextjs" class="flex bg-slate-900 flex-col text-white border">
     <div class="flex items-stretch">
       <h2 class="flex-1 bg-white text-slate-900 px-4">ENTER TODO...</h2>
@@ -1016,15 +1104,16 @@
       </h2>
     </div>
     <div class="flex items-center justify-center gap-20 py-10 ">
-      <img src="https://i.imgur.com/2XEUcOo.png" class="h-[25ch]" alt="1"/>
-      <img src="https://i.imgur.com/Mq3ngjU.png" class="h-[25ch]" alt="2"/>
-      <img src="https://i.imgur.com/mhiGmt9.png" class="h-[25ch]"  alt="3"/>
+      <img src="https://i.imgur.com/2XEUcOo.png" class="h-[25ch]" alt="1" />
+      <img src="https://i.imgur.com/Mq3ngjU.png" class="h-[25ch]" alt="2" />
+      <img src="https://i.imgur.com/mhiGmt9.png" class="h-[25ch]" alt="3" />
     </div>
     <p class="text-center">
 
       NEXT.JS CRASH COURSE
     </p>
-    <h3 class="text-slate-900 font-bold bg-white px-10 mx-auto text-6xl uppercase py-4">Build a full stack CRUD web app</h3>
+    <h3 class="text-slate-900 font-bold bg-white px-10 mx-auto text-6xl uppercase py-4">Build a full stack CRUD web app
+    </h3>
 
 
   </div>
