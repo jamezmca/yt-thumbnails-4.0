@@ -1078,10 +1078,89 @@
         opacity: 1;
       }
     }
+
+    #things {
+      font-family: 'montserrat';
+      font-weight: 700;
+    }
+
+    #things h1 {
+      font-family: 'koulen';
+      font-size: 24rem;
+      font-weight: 900;
+      /* -webkit-text-fill-color: hsl(220, 90%, 8%);
+      -webkit-text-stroke: 1px white; */
+      line-height: 22rem;
+      text-shadow: 0.02em 0.02em 0 rgb(0, 255, 213),
+        0.04em 0.04em 0 lime,
+        0.06em 0.06em 0 rgb(250, 143, 87),
+        0.08em 0.08em 0 rgb(140, 24, 127);
+    }
+
+    #things h2 {
+      font-size: 9.5rem;
+    }
+
+    #things h4 {
+      font-size: 4.5rem;
+    }
+
+    #learn-html {
+      font-family: 'Montserrat';
+    }
+    
+    #learn-html h2{
+      font-family: 'Koulen';
+      font-size: 15rem;
+      line-height: 12rem;
+      font-weight: 900;
+    }
+    #learn-html h3{
+      font-size: 6.45rem;
+      line-height: 6.5rem;
+      font-weight: 600;
+    }
+
+    #learn-html div i {
+      font-size: 14rem;
+    }
+    #learn-html > i {
+      font-size: 8rem;
+    }
+
+    #learn-html>span {
+      background: radial-gradient(black, rgba(0, 0, 0, 0));
+    }
   </style>
 </head>
 
 <body class="flex flex-wrap py-3">
+
+  <div id="learn-html" class="flex relative items-center justify-center my-10 overflow-hidden text-white">
+    <img src="https://i.imgur.com/uqKTrhz.png" class="object-cover" alt="nice">
+    <span class="absolute w-[200%] h-[200%] top-0 left-0 banana-muffin"></span>
+    <div class="absolute flex flex-col text-center right-0 bottom-0 w-fit pb-10 pr-16">
+      <div class="flex items-center justify-center">
+        <h2 class=" ">HTML<i class="fa-solid fa-code"></i></h2>
+      </div>
+      <h3>Crash Course</h3>
+
+    </div>
+      <i class="fa-brands fa-html5 absolute top-0 right-0 pr-6 pt-4"></i>
+
+  </div>
+
+  <div id="things" class="flex items-center text-center justify-center gap-5 bg-slate-900 uppercase text-white">
+    <h1 class="px-8 rounded ">3</h1>
+    <div class="flex flex-col items-center justify-center ">
+      <h2 class="text-8xl">things</h2>
+      <h4 class="text-5xl">I wish I knew</h4>
+    </div>
+    <div class="w-[22ch]">
+
+    </div>
+
+  </div>
 
   <section id="swoldier" class="bg-slate-900 flex flex-col gap-10 items-center justify-center text-white">
     <div id="swoldier-intro" class="text-center">
